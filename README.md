@@ -8,4 +8,5 @@ Inspect files and see what is needed to run scripts. Initial data can be request
 **prepare_data.py** - this is meant for the data prepration using Elerings electricity information and also inverter + electric water heater data
 
 **calculate_predictions.py** - run machine learning regression model
+
 **calculate_statistics.py** - gives overview of PV generated energy and profits compared with using from grid
