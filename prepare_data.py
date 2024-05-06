@@ -1,9 +1,9 @@
 import pandas as pd
 
 # Load your data
-inverter_data = pd.read_csv('data/original/marko_inverter.csv', sep=',', decimal='.', quotechar='"')
-boiler_data = pd.read_csv('data/original/marko_boiler.csv', sep=',', decimal='.', quotechar='"')
-electricity_price_data = pd.read_csv('data/original/electricity-nps price_20240503.csv', sep=';', decimal=',', quotechar='"', usecols=['NPS Eesti'], encoding='iso-8859-1')
+inverter_data = pd.read_csv('data/original/inverter.csv', sep=',', decimal='.', quotechar='"')
+boiler_data = pd.read_csv('data/original/boiler.csv', sep=',', decimal='.', quotechar='"')
+electricity_price_data = pd.read_csv('data/original/electricity-price.csv', sep=';', decimal=',', quotechar='"', usecols=['NPS Eesti'], encoding='iso-8859-1')
 
 
 selected_columns = inverter_data[['ts', 'inv_pv_power2', 'inv_bat_power1', 'inv_bat_soc1']]
